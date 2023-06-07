@@ -12,5 +12,5 @@ jobs:
     steps:
       - name: echo
         run: |
-          echo "Teste at `date`"
-          
+          DATETIME=$(date +"%Y-%m-%dT%H:%M:%S")
+          echo "Teste as ${DATETIME}"
