@@ -1,0 +1,16 @@
+name: "Teste"
+
+on: push
+
+jobs:
+  Build:
+    name: Build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: echo
+        run: |
+          echo "Teste at `date`"
+          
